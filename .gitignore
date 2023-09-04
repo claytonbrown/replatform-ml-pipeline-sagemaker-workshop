@@ -1,0 +1,11 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore the 'app' directory
+app/
+
+# Ignore the 'checkpoints' directory and its contents
+checkpoints/
+
+.ipynb_checkpoints/
+
