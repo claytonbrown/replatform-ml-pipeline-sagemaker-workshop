@@ -34,6 +34,10 @@ from sagemaker.tensorflow import TensorFlow
 from sagemaker.inputs import TrainingInput
 from sagemaker.workflow.steps import TrainingStep
 
+from sagemaker.local import LocalSession
+sagemaker_session = LocalSession()
+sagemaker_session.config = {'local': {'local_code': True}}
+
 
 # In[ ]:
 

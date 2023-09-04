@@ -27,6 +27,10 @@ from sagemaker import get_execution_role
 
 region = boto3.session.Session().region_name
 
+from sagemaker.local import LocalSession
+sagemaker_session = LocalSession()
+sagemaker_session.config = {'local': {'local_code': True}}
+
 role = get_execution_role()
 BUCKET = 'XXXXXXX'
 train_path = 'DataProcessed/train'
@@ -35,12 +39,12 @@ test_path = 'DataProcessed/test'
 
 #Initialize the TensorFlowProcessor
 tp = TensorFlowProcessor(
-    framework_version='XXXX',
+    framework_version='2.11.0',
     role=get_execution_role(),
     instance_type='ml.m5.xlarge',
     instance_count=1,
     base_job_name='frameworkprocessor-TF',
-    py_version='XXXX'
+    py_version='py39'
 )
 
 # there is a limit to the number of outputs to 10
@@ -50,7 +54,7 @@ tp.run(
     code='preprocessing.py',
     source_dir='script_processing',
     inputs=[
-        ProcessingInput(input_name='XXXX',source=XXXX, destination="/opt/ml/processing/XXXX")
+        ProcessingInput(input_name='source_data',source=source_data, destination="/opt/ml/processing/source_data")
     ],
     outputs=[
         ProcessingOutput(output_name="train_output_data", source="/opt/ml/processing/train/X_train", destination=f's3://{BUCKET}/{train_path}/X_train'),

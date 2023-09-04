@@ -2,7 +2,6 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 
-If you have completed all the steps in LAB1 
 Note:- If you have already completed the optional Lab1-Cloud9-Local-testing, then this section would be relatively quick , as you just need to comment the below three lines from your notebook files:-
 
     1.) Commend the below 3 lines in all the notefook files :-
@@ -13,10 +12,9 @@ Note:- If you have already completed the optional Lab1-Cloud9-Local-testing, the
 
     2.) Add the support for checkpointing in your training code's "estimator = TensorFlow("
     
-    
+   
 
-
-### ONLY FOLLOW ENTIRELY IF YOU HAVE NOT COMPLETED LAB1:-
+###  IF YOU HAVE NOT COMPLETED LAB1 only then follow all the below steps :-
 
 In this Lab2, (If you have not done Lab1) our goal is to first modularize the steps in their own separate projects. We Will start by first seperating out the pre-processing step.
 

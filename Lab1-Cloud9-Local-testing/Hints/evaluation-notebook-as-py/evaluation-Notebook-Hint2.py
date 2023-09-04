@@ -43,6 +43,12 @@ from sagemaker.tensorflow import TensorFlowProcessor
 from sagemaker.processing import ProcessingInput, ProcessingOutput
 from sagemaker import get_execution_role
 
+
+from sagemaker.local import LocalSession
+sagemaker_session = LocalSession()
+sagemaker_session.config = {'local': {'local_code': True}}
+
+
 region = boto3.session.Session().region_name
 
 role = get_execution_role()

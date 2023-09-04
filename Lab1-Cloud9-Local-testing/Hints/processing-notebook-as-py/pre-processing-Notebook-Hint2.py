@@ -28,6 +28,12 @@ from sagemaker import get_execution_role
 region = boto3.session.Session().region_name
 
 role = get_execution_role()
+
+from sagemaker.local import LocalSession
+sagemaker_session = LocalSession()
+sagemaker_session.config = {'local': {'local_code': True}}
+
+
 BUCKET = 'XXXXXXX'
 train_path = 'DataProcessed/train'
 val_path = 'DataProcessed/val'

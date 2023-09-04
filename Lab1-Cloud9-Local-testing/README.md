@@ -18,7 +18,10 @@ If you are opting to do this Lab then please ensure to not the below considerati
             "Action": "sts:AssumeRole"
         }
 
-
+    - Docker compose is needed for local testing which downloads the sagemaker docker images and runs them locally. This has been already installed by the starter bash script.
+    - Validate Docker compose installation by running - "docker-compose version" , in the shell terminal.
+    - Python library "sagemaker[local]" is required locally and has been already installed by the starter bash script.
+    
 
 
 In this our goal is to first modularize the steps in their own separate projects BY RUNNING THEM LOCALLY ON CLOUD9. We Will start by first seperating out the pre-processing step.

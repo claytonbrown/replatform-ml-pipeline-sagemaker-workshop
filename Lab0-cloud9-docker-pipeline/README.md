@@ -47,3 +47,10 @@ For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 - If you have completed the above steps - Congratulations !! you have completed the first section of this workshop. The fun begins now :)
   
+
+Stay in Cloud9 if you want to do the Optional Local testing and move to directory - Lab1-Cloud9-Local-testing/
+
+Open the README.md file in Lab1-Cloud9-Local-testing/ to follow the next steps.
+
+If you do not want to do local testing step then you can move to Sagemaker Studio and open the README.md in Lab2-Unit-testing/ in Sagemaker studio
+

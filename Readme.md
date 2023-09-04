@@ -4,7 +4,7 @@ Hi There,
 
 Welcome to this Workshop for replatforming ML pipeline to Sagemaker Pipelines
 
-Github - https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop/tree/main
+Github - https://github.com/sumirk/replatform-ml-pipeline-sagemaker-workshop/tree/main
 
 
 Setting expectations:-
@@ -45,7 +45,7 @@ Note:- For Lab0 and Lab1 we will be using the Cloud9 environment:
 For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 
-- Clone this repository in Cloud9 environment - git clone https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop.git
+- Clone this repository in Cloud9 environment - git clone https://github.com/sumirk/replatform-ml-pipeline-sagemaker-workshop.git
 
 - Change the current directory to "Lab0-cloud9-docker-pipeline/"
 
@@ -58,8 +58,11 @@ For Lab0 and Lab1 we will be using the Cloud9 environment:
 - Run the command "chmod +x deploy-cfn-run-task.sh" in the root diretory
   
 - Run the bash script './deploy-cfn-run-task.sh' and then run pass the s3-bucket name, the stack-name and your AWS account number to this command. for eg - ./deploy-cfn-run-task techsummit2023mlops cfn-test-summit-cli-01 9707709xxxx
+
+Note:- If you receive any PIP Sagemaker error then run - "pip install sagemaker[local]"
   
-- The above step will create a cloudformation template and build the docker container from the DockerFile locally and tag and push the image to ECR.
+  
+- The above steps will create a cloudformation template and build the docker container from the DockerFile locally and tag and push the image to ECR.
   
 - A Fargate ECS cluster will also be created which will run a task to run the ML pipeline project as a standlone task in your accounts default VPC, Default Subnet with Default security group.
   
@@ -67,7 +70,7 @@ For Lab0 and Lab1 we will be using the Cloud9 environment:
   
 - The trained model and the checkpoints will be saved to your S3 bucket by the container task and then the task will be stopped.
   
-- The training metrics are being logged to Cloudwatch by the Fargate task. If you want to take a look check the tasks logging in ECS console.
+- The training metrics are being logged to Cloudwatch by the Fargate task. If you want to take a look check the tasks logging in ECS console. (You should see - "Data Evaluation Complete" in the log to confirm the job ran successfuly)
   
 - If you want to run the task again you can do so by running the "aws ecs run-task ...." command from the shell script.
   
@@ -83,8 +86,8 @@ For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 - After this step open Sagemaker Studio in other browser window if you already have Studio deployed and then use the system terminal to clone the below repository in your Sagemaker studio system terminal.
 
-  - To open in browser - https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop
-  - Clone link - https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop.git
+  - To open in browser - https://github.com/sumirk/replatform-ml-pipeline-sagemaker-workshop
+  - Clone link - https://github.com/sumirk/replatform-ml-pipeline-sagemaker-workshop.git
 
 - If you have completed the above steps - Congratulations !! you have completed the first section of this workshop. The fun begins now :)
   
