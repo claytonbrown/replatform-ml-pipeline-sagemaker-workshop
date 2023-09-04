@@ -20,6 +20,8 @@ from botocore.exceptions import NoCredentialsError
 
 local_folder = '/app/data'
 
+os.mkdir("/opt/ml/checkpoints")
+
 checkpoint_path_to_s3 = '/opt/ml/checkpoints'
 
 def create_cnn_model():
