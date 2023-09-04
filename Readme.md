@@ -6,6 +6,12 @@ Welcome to this Workshop for replatforming ML pipeline to Sagemaker Pipelines
 
 Github - https://github.com/sumirk/replatform-ml-pipeline-sagemaker-workshop/tree/main
 
+The Fashion MNIST dataset is a well-known dataset in the field of machine learning and computer vision. It consists of grayscale images of clothing items, each belonging to one of ten classes, including items like T-shirts, dresses, sneakers, and more.
+
+The example here is a multi-class image classification problem. The goal was to build and train a deep learning model that could correctly classify these clothing items into their respective classes based on the images.
+
+Please note that is a simplified example for illustration purposes
+
 
 Setting expectations:-
 
