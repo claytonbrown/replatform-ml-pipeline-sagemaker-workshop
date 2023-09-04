@@ -59,7 +59,7 @@ eval_path = 'DataEvaluation/metrics/'
 tp = TensorFlowProcessor(
     framework_version='2.11.0',
     role=get_execution_role(),
-    instance_type='ml.m5.xlarge',
+    instance_type='local',
     instance_count=1,
     base_job_name='frameworkprocessor-TF',
     py_version='py39'
@@ -74,7 +74,7 @@ tp.run(
         ProcessingInput(input_name='test_data_eval',source=test_data_eval, destination="/opt/ml/processing/test_data_eval"),
     ],
     outputs=[
-        ProcessingOutput(output_name="eval_output_data", source="/opt/ml/processing/eval_output", destination=f's3://{BUCKET}/{eval_path}'),
+        ----------------------------------------------------------- To be Filled ---------------------------------------------------------
     ]
 )
 

@@ -106,7 +106,7 @@ hyperparameters={
 estimator = TensorFlow(
     entry_point="main.py",
     source_dir="script_train",
-    instance_type=train_instance_type,
+    instance_type='local',
     instance_count=1,
         ----------------------------------------------------------- To be Filled ---------------------------------------------------------
 
