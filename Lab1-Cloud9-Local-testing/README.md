@@ -38,7 +38,9 @@ https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-pipelines/t
 https://github.com/aws/amazon-sagemaker-examples/blob/89c54681b7e0f83ce137b34b879388cf5960af93/sagemaker-pipelines/tabular/abalone_build_train_deploy/sagemaker-pipelines-preprocess-train-evaluate-batch-transform.ipynb 
 
 
------------------------------------------------- Lab1 - Section1 - (Pre-processing) ----------------------------------------------------------------------
+# Lab1 - Section1 - (Pre-processing)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 If you check the evaluation.py in your Cloud9 or UI where you have opened the other repo (ml-replatform-pipeline-workshop) 
 
@@ -137,7 +139,8 @@ Look at hints when you need them in the hints directory sequentially. There is a
 
 
 
------------------------------------------------- Lab1 - Section2 (Training) ----------------------------------------------------------------------
+# Lab1 - Section2 (Training)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Its a similar task in this section. We would be using the Sagemaker Training API which is dedicated for runnign training jobs as it provides many features and integrations with Sagemaker Experiments / HPO optimization , Distributed training etc which makes it very useful to use with the Sagenaker SDK for larger teams and projects 
@@ -186,7 +189,8 @@ Look at hints when you need them in the hints directory sequentially. There is a
 
 
 
------------------------------------------------- Lab1 - Section3 (Evaluation) ----------------------------------------------------------------------
+# Lab1 - Section3 (Evaluation)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 You know the drill now. This job is very similar to pre-processing and almost similar from the Pipeline notebook perspective. However, the evaluation.py script in the script_evaluation needs some changes.
