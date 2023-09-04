@@ -80,3 +80,6 @@ aws ecs run-task \
 
 echo "ECS Task Started. Task Definition ARN: $ECSTaskDefinitionArn, Fargate Cluster Name: $FargateClusterName"
 
+pip install 'sagemaker[local]' --upgrade
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
