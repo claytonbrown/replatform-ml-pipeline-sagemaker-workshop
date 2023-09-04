@@ -1,4 +1,5 @@
------------------------------------------------- (Optional) Lab1 Cloud9 Local testing  ----------------------------------------------------------------------
+# (Optional) Lab1 Cloud9 Local testing 
+------------------------------------------------  
 
 the idea of this local testing lab is to do debugging faster and verify if your code integrates with Sagemaker API's. If you start porting your code to Sagemaker Studio directly then you have to debug using Cloudwatch logs and wait for yuur jobs to complete on Sgemaker jobs.
 

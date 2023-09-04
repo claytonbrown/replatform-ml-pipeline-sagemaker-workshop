@@ -39,9 +39,8 @@ The goal of the workshop is to modularize the existing ML pipeline which was run
 Note:- For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 
-
--------------------------Lab0 Cloud9 docker pipeline --------------------------------
-
+# Lab0 Cloud9 docker pipeline
+------------------------------------------------
 
 For Lab0 and Lab1 we will be using the Cloud9 environment:
 

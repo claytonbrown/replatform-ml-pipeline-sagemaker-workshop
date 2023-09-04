@@ -1,5 +1,5 @@
-
------------------------------------------------- Lab2-Intro  ----------------------------------------------------------------------
+# Lab2-Intro 
+----------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 
 If you have completed all the steps in LAB1 
@@ -16,8 +16,7 @@ Note:- If you have already completed the optional Lab1-Cloud9-Local-testing, the
     
 
 
-ONLY FOLLOW ENTIRELY IF YOU HAVE NOT COMPLETED LAB1:-
-------------------------------------------------------
+### ONLY FOLLOW ENTIRELY IF YOU HAVE NOT COMPLETED LAB1:-
 
 In this Lab2, (If you have not done Lab1) our goal is to first modularize the steps in their own separate projects. We Will start by first seperating out the pre-processing step.
 
@@ -36,7 +35,8 @@ https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-pipelines/t
 https://github.com/aws/amazon-sagemaker-examples/blob/89c54681b7e0f83ce137b34b879388cf5960af93/sagemaker-pipelines/tabular/abalone_build_train_deploy/sagemaker-pipelines-preprocess-train-evaluate-batch-transform.ipynb 
 
 
------------------------------------------------- Lab2 - Section1 - (Pre-processing) ----------------------------------------------------------------------
+# Lab2 - Section1 - (Pre-processing)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 If you check the evaluation.py in your Cloud9 or UI where you have opened the other repo (ml-replatform-pipeline-workshop) 
 
@@ -135,7 +135,8 @@ Look at hints when you need them in the hints directory sequentially. There is a
 
 
 
------------------------------------------------- Lab2 - Section2 (Training) ----------------------------------------------------------------------
+# Lab2 - Section2 (Training)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Its a similar task in this section. We would be using the Sagemaker Training API which is dedicated for runnign training jobs as it provides many features and integrations with Sagemaker Experiments / HPO optimization , Distributed training etc which makes it very useful to use with the Sagenaker SDK for larger teams and projects 
@@ -184,8 +185,8 @@ Look at hints when you need them in the hints directory sequentially. There is a
 
 
 
------------------------------------------------- Lab2 - Section3 (Evaluation) ----------------------------------------------------------------------
-
+# Lab2 - Section3 (Evaluation)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You know the drill now. This job is very similar to pre-processing and almost similar from the Pipeline notebook perspective. However, the evaluation.py script needs a lot of changes.
 

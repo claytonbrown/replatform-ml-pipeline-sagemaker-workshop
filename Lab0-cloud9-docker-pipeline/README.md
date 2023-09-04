@@ -1,5 +1,5 @@
-
------------------------------------------------- Lab0 Cloud9 docker pipeline ----------------------------------------------------------------------
+# Lab0 Cloud9 docker pipeline 
+------------------------------------------------ 
 
 For Lab0 and Lab1 we will be using the Cloud9 environment:
 
