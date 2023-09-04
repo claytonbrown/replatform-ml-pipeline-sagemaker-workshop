@@ -8,6 +8,7 @@ Github - https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop/tre
 
 
 Setting expectations:-
+
      - This is not a Machine learning workshop but rather a Machine learning engineering workshop.
      - You do not need to know ML algorithms but just enough knowledge to understand the process and the important steps.
      - You will have to go through a lot of Python code re-structuring, Sagemaker concepts etc.
@@ -34,11 +35,13 @@ The goal of the workshop is to modularize the existing ML pipeline which was run
 - If you do not have a Sagemaker Studio and a Cloud9 environment then use the below CFN template to deploy both in your account.
   - https://github.com/tom5610/amazon-sagemaker-mlops-samples/blob/main/template.yaml
   
+
 Note:- For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 
 
------------------------------------------------- Lab0 Cloud9 docker pipeline ----------------------------------------------------------------------
+-------------------------Lab0 Cloud9 docker pipeline --------------------------------
+
 
 For Lab0 and Lab1 we will be using the Cloud9 environment:
 

@@ -4,6 +4,7 @@ the idea of this local testing lab is to do debugging faster and verify if your 
 
 
 If you are opting to do this Lab then please ensure to not the below considerations:-
+
     - Sagemaker Local testing currently does not support checkpointing in training job.
     - Give the Cloud9 role (AWSCloud9SSMAccessRole) full s3 permissions (This is a role assigned to the EC2 instance for Cloud9)
     - The admin role which used to login to Cloud9 and assumed by Cloud9 instance should have additional IAM trust relationship as below: (arn:aws:iam::AcountNumber:role/admin)
@@ -120,6 +121,7 @@ Estimated time for this section :- 20 minutes , if it takes more ethan this then
 
 
 Tasks:-
+
      - Add the inputs to the notebook script for the TensorFlowProcessor to have the s3 raw_data source which maps to /opt/ml/processing/source_data path in the processing job.
      - Add outputs to the notebook script TensorFlowProcessor to take the source data from different directories in /opt/ml/processing/ , for example /opt/ml/processing/train to copy the training data (data + label) back to S3.
      - Modify the preprocessing.py inside script_processing to map the 'local_folder' variabble being passed to the preprocess_data function with the path for source data.
@@ -153,6 +155,7 @@ Understand how the environment variables are automatically created for all these
 
 
 Points to note:-
+
     - The ecs-argate python pipelines training.py step is executed by the evaluation.py file as its the main entry point script.
     - From evaluation.py, the mdoel definition to create a cnn model and the train_model function passes the inputs and ececutes training.py
     - The checkpoints are being uploaded to S3 during training and a best checkpoint model is stored seperately in the root of S3 bucket.
@@ -167,6 +170,7 @@ Estimated time for this section : ~ 20 minutes , if it takes more ethan this the
 
 
 Tasks:-
+
     - A directory script_train is already present in Lab1 along with a notebook script training-Local-Notebook-SG-SDK.py
     - The training.py in the script_train is not the main file and the fact that we have to parse a lot of parameters to the training job, we should create a seperate main.py file in the script_train directory which will import the training.py module functions.
     - You should use python argparse.ArgumentParser() to parse the parameters bieng passed and refer to the two example notebooks liked above as reference.
@@ -187,6 +191,7 @@ Look at hints when you need them in the hints directory sequentially. There is a
 You know the drill now. This job is very similar to pre-processing and almost similar from the Pipeline notebook perspective. However, the evaluation.py script in the script_evaluation needs some changes.
 
 Tasks
+
     - You will have to be able to pass the model.tar.gz from the training job (uoloaded to s3) to an input diretory in the Sagemaker processing job here. 
     - Load the best_checkpoint model using tensorflow.keras load_model function 
     - You will need to remove the reference to pre-processing, training jobs and upload/download s3 functions.

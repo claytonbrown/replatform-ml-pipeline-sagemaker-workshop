@@ -120,6 +120,7 @@ Estimated time for this section :- 20 minutes , if it takes more ethan this then
 
 
 Tasks:-
+
      - Add the inputs to the notebook for the TensorFlowProcessor to have the s3 raw_data source which maps to /opt/ml/processing/source_data path in the processing job.
      - Add outputs to the notebook TensorFlowProcessor to take the source data from different directories in /opt/ml/processing/ , for example /opt/ml/processing/train to copy the training data (data + label) back to S3.
      - Modify the preprocessing.py inside script_processing to map the 'local_folder' variabble being passed to the preprocess_data function with the path for source data.
@@ -153,6 +154,7 @@ Understand how the environment variables are automatically created for all these
 
 
 Points to note:-
+
     - The ecs-argate python pipelines training.py step is executed by the evaluation.py file as its the main entry point script.
     - From evaluation.py, the mdoel definition to create a cnn model and the train_model function passes the inputs and ececutes training.py
     - The checkpoints are being uploaded to S3 during training and a best checkpoint model is stored seperately in the root of S3 bucket.
@@ -167,6 +169,7 @@ Estimated time for this section : ~ 20 minutes , if it takes more ethan this the
 
 
 Tasks:-
+
     - A directory script_train is already present in Lab1 along with a notebook training.ipynb
     - The training.py is not the main file and the fact that we have to parse a lot of parameters to the training job, we should create a seperate main.py file in the script_train directory which will import the training.py module functions.
     - You should use python argparse.ArgumentParser() to parse the parameters bieng passed and refer to the two example notebooks liked above as reference.
@@ -187,6 +190,7 @@ Look at hints when you need them in the hints directory sequentially. There is a
 You know the drill now. This job is very similar to pre-processing and almost similar from the Pipeline notebook perspective. However, the evaluation.py script needs a lot of changes.
 
 Tasks
+
     - You will have to be able to pass the model.tar.gz from the training job to an input diretory in the processing job here. 
     - Load the best_checkpoint model using tensorflow.keras load_model function 
     - You will need to remove the reference to pre-processing, training jobs and uload/download s3 functions.
