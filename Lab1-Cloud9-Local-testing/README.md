@@ -126,6 +126,9 @@ Estimated time for each task - 10 minutes, if it takes more time then look at hi
 Estimated time for this section :- 20 minutes , if it takes more ethan this then use the final data directory as refernece to complete your section.
 
 
+Note:- Run the python notebook files as a typical python file as in Cloud9 we are not using notebooks. For example - # python pre-processing-Notebook-Final.py
+
+
 Tasks:-
 
      - Add the inputs to the notebook script for the TensorFlowProcessor to have the s3 raw_data source which maps to /opt/ml/processing/source_data path in the processing job.
@@ -209,6 +212,7 @@ Tasks
 Look at hints when you need them in the hints directory sequentially. There are final files as well in the directory which has the finished project. Try not to look at the final unless its needed to move to LAB3.
 
 
+Note:- Run the python notebook files as a typical python file as in Cloud9 we are not using notebooks.
 
 
 Estimated time for each task: ~ 10 minutes, if it takes more time then look at hints and move forward. The idea is to learn and move forward and not being stuck, it takes time do do these things sometimes.
