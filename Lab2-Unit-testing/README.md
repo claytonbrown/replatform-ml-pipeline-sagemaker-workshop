@@ -35,6 +35,9 @@ https://github.com/aws/amazon-sagemaker-examples/blob/89c54681b7e0f83ce137b34b87
 
 # Lab2 - Section1 - (Pre-processing)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+This Lab has to be done from Sagemaker Studio:-
+
+
 
 If you check the evaluation.py in your Cloud9 or UI where you have opened the other repo (ml-replatform-pipeline-workshop) 
 
