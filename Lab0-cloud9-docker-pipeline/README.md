@@ -5,7 +5,7 @@ For Lab0 and Lab1 we will be using the Cloud9 environment:
 
 
 - Clone this repository in Cloud9 environment - git clone https://github.com/sumirk/ml-replatform-pipeline-sagemaker-workshop.git
-
+  
 - Change the current directory to "Lab0-cloud9-docker-pipeline/"
 
 - Use the below commands to resize the EBS volume:-
